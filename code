@@ -1,0 +1,4 @@
+SELECT geos.zip_code, geos.city, cust.last_name, cust.first_name
+FROM `qwiklabs-gcp-03-67f700d33463.customer_a_dataset.customer_info` as cust
+JOIN `qwiklabs-gcp-02-47bfd7c8f092.demo_dataset.authorized_view_a` as geos
+ON geos.zip_code = cust.postal_code;
